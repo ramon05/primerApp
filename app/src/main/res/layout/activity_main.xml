@@ -81,6 +81,7 @@
         android:ems="10"
         android:gravity="center"
         android:hint="Email"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
         android:inputType="textEmailAddress"
         android:textColor="@android:color/background_light"
         android:textColorHighlight="@android:color/background_light"
