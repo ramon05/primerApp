@@ -44,8 +44,8 @@ public class ProfileActivity extends AppCompatActivity {
                 textViewName.setText(currentPerson.getName());
                 textViewAbout.setText(currentPerson.getAbout());
                textViewProjects.setText(String.valueOf(currentPerson.getProjects()));
-               // textViewRepos.setText(String.valueOf(currentPerson.getRepos()));
-               // textViewStars.setText(String.valueOf(currentPerson.getStars()));
+               textViewRepos.setText(String.valueOf(currentPerson.getRepos()));
+               textViewStars.setText(String.valueOf(currentPerson.getStars()));
             }
         }
 
