@@ -82,10 +82,13 @@ public class Persona implements Parcelable {
         dest.writeInt(this.projects);
     }
 
-    public Persona(String nom, String ab, String email){
+    public Persona(String nom, String ab, String email, int repos, int projects, int stars){
         this.name = nom;
         this.about = ab;
         this.email = email;
+        this.repos = repos;
+        this.projects = projects;
+        this.stars = stars;
     }
 
     public Persona() {

@@ -36,13 +36,16 @@ public class MainActivity extends AppCompatActivity {
                 String email = "";
                 String nom = "Ramon Agustin Castillo Veras";
                 String about = "Soy un Progamador con conocimiento en diferentes Lenguaje de Progamacion : C#, C++, Java etc";
+                int rp = 100;
+                int pj = 100;
+                int st = 50;
 
                 if(inputEmail != null){
 
                     email = inputEmail.getText().toString().toLowerCase();
                 }
 
-                Persona objPersona = new Persona(nom,about,email);
+                Persona objPersona = new Persona(nom,about,email,rp,pj,st);
                 //objPersona.setEmail(email);
                 //objPersona.setName(nom);
                 //objPersona.setAbout(about);
