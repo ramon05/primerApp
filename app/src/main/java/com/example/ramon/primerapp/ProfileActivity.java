@@ -33,9 +33,9 @@ public class ProfileActivity extends AppCompatActivity {
 
         textViewName = findViewById(R.id.textViewNombre);
         textViewAbout = findViewById(R.id.textViewAbout);
-        //textViewProjects = findViewById(R.id.textViewProjects);
-        //textViewRepos = findViewById(R.id.textViewRepos);
-        //textViewStars = findViewById(R.id.textViewStars);
+        textViewProjects = findViewById(R.id.Repos);
+        textViewRepos = findViewById(R.id.tv_project_Resp);
+        textViewStars = findViewById(R.id.tv_stat_Resp);
         buttonShare = findViewById(R.id.btncompartir);
 
         if(getIntent()!=null && getIntent().getExtras()!= null){
@@ -43,7 +43,7 @@ public class ProfileActivity extends AppCompatActivity {
             if(currentPerson != null){
                 textViewName.setText(currentPerson.getName());
                 textViewAbout.setText(currentPerson.getAbout());
-               // textViewProjects.setText(String.valueOf(currentPerson.getProjects()));
+               textViewProjects.setText(String.valueOf(currentPerson.getProjects()));
                // textViewRepos.setText(String.valueOf(currentPerson.getRepos()));
                // textViewStars.setText(String.valueOf(currentPerson.getStars()));
             }
