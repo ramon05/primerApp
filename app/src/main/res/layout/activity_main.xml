@@ -55,6 +55,7 @@
         android:gravity="center"
         android:hint="Password"
         android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
         android:singleLine="false"
         android:textColor="@android:color/background_light"
         android:textColorHighlight="@android:color/background_light"
