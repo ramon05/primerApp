@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v7.widget.AppCompatButton;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.util.HashMap;
 
@@ -46,22 +47,16 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 Persona objPersona = new Persona(nom,about,email,rp,pj,st);
-                //objPersona.setEmail(email);
-                //objPersona.setName(nom);
-                //objPersona.setAbout(about);
                 String em = objPersona.getEmail();
-                //String nomb = objPersona.getName();
-                //String ab = objPersona.getAbout();
 
+                if(em != null && inputEmail.getText().toString().equals("051991@gmail.com") && inputPassword.getText().toString().equals("12345")){
 
-                if(em != null){
-                    //String person = em+""+nomb+""+ab;
                     Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
                     intent.putExtra("PROFILE_DATA",objPersona);
                     startActivity(intent);
 
                 }else{
-                    ///showErrorDialog();
+                    Toast.makeText(getApplicationContext(), "Email o Contraseña Invalida", Toast.LENGTH_SHORT).show();
                     inputEmail.setText("");
                     inputPassword.setText("");
                 }
@@ -69,16 +64,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-/*
-    private void showErrorDialog(){
-        AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(this);
-        dlgAlert.setMessage(R.string.dialog_body_message);
-        dlgAlert.setTitle(R.string.dialog_title_message);
-        dlgAlert.setPositiveButton("OK", null);
-        dlgAlert.setCancelable(true);
-        dlgAlert.create().show();
-    }
-*/
 
     private void createDummyListOfPeople(){
         Persona person = new Persona();
