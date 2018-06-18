@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 Persona objPersona = new Persona(nom,about,email,rp,pj,st);
                 String em = objPersona.getEmail();
 
-                if(em != null && inputEmail.getText().toString().equals("051991@gmail.com") && inputPassword.getText().toString().equals("12345")){
+                if(em != null && inputEmail.getText().toString().equals("ramoncastillo051991@gmail.com") && inputPassword.getText().toString().equals("12345")){
 
                     Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
                     intent.putExtra("PROFILE_DATA",objPersona);
